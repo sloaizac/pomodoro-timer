@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Nanum+Gothic&display=swap');
+
+$color: rgb(240, 196, 196);
+
+h1{
+    text-align: center;
+    font-family: 'Nanum Gothic', sans-serif;
+    background-color: rgb(227, 230, 109);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+
+%groups{
+    background-position: center; 
+    background-size: cover;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    table, td, th{
+        border: 1px solid white;
+    }
+    table{
+        border-collapse: collapse;
+    }
+    th,td{
+        padding: 5px;
+    }
+}
+
+.type{
+   display: inline-block;
+   margin: 4px 1px 4px 1px;
+   padding: 5px;
+   border-radius: 5%;
+   h3{
+       text-align: center;
+   }
+}
+
+#grupo1{
+    @extend %groups;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(lacteos.jpg);
+}
+
+#grupo2{
+    @extend %groups;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(Proteínas-2.jpg);
+}
+
+#grupo3{
+    @extend %groups;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(grupo3.jpg);
+}
+
+#grupo4{
+    @extend %groups;
+    background-image:linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+      ), url(verduras-hortalizas.jpg);
+}
+
+.sidebar{
+    width: 100%;
+    font-size: 'Nanum Gothic', sans-serif;
+    height: 100vh;
+    float: left;
+    background-color: $color;
+    text-align: start;
+    padding: 2em;
+}
+
+@media screen and (max-width: 600px){
+    .sidebar{
+        display: none;
+    }
+}
+
+.receta{
+    position: relative;
+    display: inline-block;
+}
+
+#profile-picture{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 30px;
+}
+
+#info{
+    background-color: $color;
+    margin: auto;
+    margin-top: 4em;
+    padding: 2em;
+}
